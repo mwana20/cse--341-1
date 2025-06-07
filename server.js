@@ -8,7 +8,7 @@ const GitHubStrategy = require('passport-github2').Strategy;
 const cors = require('cors');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 10000;
 
 // Middleware
 app.use(bodyParser.json());
@@ -34,7 +34,7 @@ const getCallbackURL = () => {
   }
   
   if (process.env.NODE_ENV === 'production') {
-    return 'https://cse--341-1-8o7o.onrender.com/auth/github/callback';
+    return 'https://cse--341-1.onrender.com/auth/github/callback';
   }
   
   return `http://localhost:${port}/auth/github/callback`;
