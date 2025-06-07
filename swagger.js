@@ -11,7 +11,7 @@ const options = {
     servers: [
       {
         url: process.env.NODE_ENV === 'production' 
-          ? 'https://cse-341-1-8o7o.onrender.com' 
+          ? 'https://cse--341-1-8o7o.onrender.com' 
           : 'http://localhost:3002',
         description: process.env.NODE_ENV === 'production' ? 'Production server' : 'Development server',
       },
