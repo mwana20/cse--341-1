@@ -34,7 +34,7 @@ const getCallbackURL = () => {
   }
   
   if (process.env.NODE_ENV === 'production') {
-    return 'https://cse340-two.onrender.com/auth/github/callback';
+    return 'https://cse--341-1.onrender.com/auth/github/callback';
   }
   
   return `http://localhost:${port}/auth/github/callback`;

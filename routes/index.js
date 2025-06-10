@@ -469,7 +469,7 @@ const getCallbackURL = () => {
   }
   
   if (process.env.NODE_ENV === 'production') {
-    return 'https://cse340-two.onrender.com/auth/github/callback';
+    return 'https://cse--341-1.onrender.com/auth/github/callback';
   }
   
   return `http://localhost:${process.env.PORT || 3000}/auth/github/callback`;
@@ -572,7 +572,7 @@ router.get('/debug/env', isAuthenticated, (req, res) => { // Add isAuthenticated
   
   const callbackURL = process.env.GITHUB_CALLBACK_URL || 
     (process.env.NODE_ENV === 'production' 
-      ? 'https://cse340-two.onrender.com/auth/github/callback'
+      ? 'https://cse--341-1.onrender.com/auth/github/callback'
       : `http://localhost:${process.env.PORT || 3000}/auth/github/callback`);
   
   res.json({
